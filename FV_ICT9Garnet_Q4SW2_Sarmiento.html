@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>⏰ TIME CONVERTER ⏰</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@700&display=swap" rel="stylesheet">
+	<style type="text/css">
+		.div{
+			font-family: 'Delius Unicase', cursive;
+			text-align: center;
+			border: 10px solid #ED6E97;
+			border-radius: 4px;
+			padding: 14px 40px;
+			margin: 100px;
+			margin-left: 100px;
+			margin-right: 50px;
+			margin-top: 25px;
+			color: #3EC7C2;
+			text-shadow: 3px 3px 4px #797979;
+			font-size: 25px;
+			outline: 5px solid #DC381F;
+		}
+		.title2{
+			font-size: 30px;
+		}
+		.line{
+			border: 4px solid #FFF0C8;
+		}
+		.button{
+			border: 7px solid #007C80;
+			border-radius: 5px;
+			padding: 10px 30px;
+			color: #FFAE42;
+			background-color: #FFF0C8;
+			font-size: 20px;
+			letter-spacing: 2px;
+		}
+		.input{
+			border: 5px solid #F98B88;
+			border-radius: 5px;
+			color: #F98B88;
+			background-color: #FFF0C8;
+			padding: 7px 10px;
+		}
+	</style>
+</head>
+<body class="body" style="background-image: url(https://img.freepik.com/premium-vector/groovy-curvy-style-background_23-2149075904.jpg?w=740); background-repeat: no-repeat; background-size: 100% 100%; background-attachment: fixed;">
+	<div class="container bg-warning div">
+		<h1>🌟 TIME CONVERTER 🌟</h1>
+		<script type="text/javascript">
+			alert('WELCOME TO TIME CONVERTER 😀')
+		</script>
+		</div>
+		<div class="container bg-warning div">
+		<h2 class="title2">MINUTES 🌈</h2>
+		<input class="input" type="number" id="valueOne" value="0">
+		<hr class="line">
+		<button onclick="MS()" class="button">TO SECONDS ⏰</button>
+		<button onclick="MH()" class="button">TO HOURS ⏰</button>
+		<button onclick="MD()" class="button">TO DAYS ⏰</button>
+		<script type="text/javascript">
+			let x;
+			function MS(){
+				let x = parseInt(document.getElementById("valueOne").value);
+				alert(x * 60);
+			}
+			function MH(){
+				let x = parseInt(document.getElementById("valueOne").value);
+				alert(x / 60);
+			}
+			function MD(){
+				let x = parseInt(document.getElementById("valueOne").value);
+				alert(x / 1440);
+			}
+		</script>
+		</div>
+		<div class="container bg-warning div">
+		<h2 class="title2">SECONDS 🌈</h2>
+		<input class="input" type="number" id="valueTwo" value="0">
+		<hr class="line">
+		<button onclick="SM()" class="button">TO MINUTES ⏰</button>
+		<button onclick="SH()" class="button">TO HOURS ⏰</button>
+		<button onclick="SD()" class="button">TO DAYS ⏰</button>
+		<script type="text/javascript">
+			let y;
+			function SM(){
+				let y = parseInt(document.getElementById("valueTwo").value);
+				alert(y / 60);
+			}
+			function SH(){
+				let y = parseInt(document.getElementById("valueTwo").value);
+				alert(y / 3600);
+			}
+			function SD(){
+				let y = parseInt(document.getElementById("valueTwo").value);
+				alert(y / 86400);
+			}
+		</script>
+		</div>
+		<div class="container bg-warning div">
+		<h2 class="title2">HOURS 🌈</h2>
+		<input class="input" type="number" id="valueThree" value="0">
+		<hr class="line">
+		<button onclick="HS()" class="button">TO SECONDS ⏰</button>
+		<button onclick="HM()" class="button">TO MINUTES ⏰</button>
+		<button onclick="HD()" class="button">TO DAYS ⏰</button>
+		<script type="text/javascript">
+			let a;
+			function HS(){
+				let a = parseInt(document.getElementById("valueThree").value);
+				alert(a * 3600);
+			}
+			function HM(){
+				let a = parseInt(document.getElementById("valueThree").value);
+				alert(a * 60);
+			}
+			function HD(){
+				let a = parseInt(document.getElementById("valueThree").value);
+				alert(a / 24);
+			}
+		</script>
+		</div>
+		<div class="container bg-warning div">
+		<h2 class="title2">DAYS 🌈</h2>
+		<input class="input" type="number" id="valueFour" value="0">
+		<hr class="line">
+		<button onclick="DS()" class="button">TO SECONDS ⏰</button>
+		<button onclick="DM()" class="button">TO MINUTES ⏰</button>
+		<button onclick="DH()" class="button">TO HOURS ⏰</button>
+		<script type="text/javascript">
+			let b;
+			function DS(){
+				let b = parseInt(document.getElementById("valueFour").value);
+				alert(b * 86400);
+			}
+			function DM(){
+				let b = parseInt(document.getElementById("valueFour").value);
+				alert(b * 1440);
+			}
+			function DH(){
+				let b = parseInt(document.getElementById("valueFour").value);
+				alert(b * 24);
+			}
+		</script>
+		</div>
+</body>
+</html>
